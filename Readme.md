@@ -1,6 +1,6 @@
-# cargo [unleash em 🐉](https://github.com/gnunicorn/cargo-unleash)
+# cargo [unleash em 🐉](https://github.com/tetcoin/cargo-unleash)
 
-`cargo` release automation tooling for _massiv mono-repo_. Developed primarily for [Parity Substrate](https://github.com/paritytech/substrate).
+`cargo` release automation tooling for _massiv mono-repo_. Developed primarily for [Tetcore](https://github.com/tetcoin/tetcore).
 
 ## Changes
 
@@ -10,7 +10,7 @@ see [Changelog.md](./Changelog.md)
 
 Use `cargo install` to install:
 ```bash
-cargo install cargo-unleash --version 1.0.0-alpha.11
+cargo install unleash --version 1.0.0-alpha.11
 ```
 
 ## Usage
@@ -26,11 +26,11 @@ There are more options available on the CLI, just run with `--help`:
 
 ```bash
 
-cargo-unleash 1.0.0-alpha.11
+unleash 1.0.0-alpha.11
 Release the crates of this massiv monorepo
 
 USAGE:
-    cargo-unleash [FLAGS] [OPTIONS] <SUBCOMMAND>
+    unleash [FLAGS] [OPTIONS] <SUBCOMMAND>
 
 FLAGS:
     -h, --help
@@ -70,14 +70,14 @@ SUBCOMMANDS:
 The main command is `cargo unleash em-dragons`, here is its help. All subcommands have extensive `--help` for you.
 
 ```bash
-$ cargo-unleash em-dragons --help
+$ unleash em-dragons --help
 
 Unleash 'em dragons
 
 Package all selected crates, check them and attempt to publish them.
 
 USAGE:
-    cargo-unleash em-dragons [FLAGS] [OPTIONS]
+    unleash em-dragons [FLAGS] [OPTIONS]
 
 FLAGS:
         --build
@@ -134,29 +134,29 @@ OPTIONS:
 
 **Release all crates** not having the `-dev`-pre version set
 ```bash
-cargo-unleash em-dragons --ignore-pre-version dev
+unleash em-dragons --ignore-pre-version dev
 ```
 
 **Release all crates** not having `test` in the name
 ```bash
-cargo-unleash em-dragons --skip test
+unleash em-dragons --skip test
 ```
 
 **Set the pre-version to `-dev`**
 ```bash
-cargo-unleash version set-pre dev
+unleash version set-pre dev
 ```
 
 **Bump the pre-version**, so for e.g. from `alpha.1` to `alpha.2` or `beta.3` to `beta.4`:
 ```bash
-cargo-unleash version bump-pre
+unleash version bump-pre
 ```
 
 ## In the wild
 
-_You are using the tooling and want to be mentioned here–[create an issue](https://github.com/gnunicorn/cargo-unleash/issues/new)_
+_You are using the tooling and want to be mentioned here–[create an issue](https://github.com/tetcoin/cargo-unleash/issues/new)_
 
- - [Parity Substrate](https://github.com/paritytech/substrate) automatic releasing via [Gitlab CI](https://github.com/paritytech/substrate/blob/master/.gitlab-ci.yml)
+ - [Tetcore](https://github.com/tetcoin/tetcoin) automatic releasing via [Gitlab CI](https://github.com/tetcoin/tetcore/blob/master/.gitlab-ci.yml)
 
 ## License & Credits
 

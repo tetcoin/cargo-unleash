@@ -317,7 +317,7 @@ pub enum Command {
 
 #[derive(Debug, StructOpt)]
 #[structopt(
-    name = "cargo-unleash",
+    name = "unleash",
     about = "Release the crates of this massiv monorepo"
 )]
 pub struct Opt {

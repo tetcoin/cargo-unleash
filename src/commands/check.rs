@@ -225,7 +225,7 @@ pub fn check<'a>(
         .collect::<HashMap<_, _>>();
 
     // FIXME: make build config configurable
-    //        https://github.com/paritytech/cargo-unleash/issues/20
+    //        https://github.com/tetcoin/cargo-unleash/issues/20
     let opts = PackageOpts {
         config: c,
         verify: false,
